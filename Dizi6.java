@@ -43,5 +43,9 @@ public class Dizi6 {
         for (int i = 0; i < C.length; i++) {
             System.out.print(C[i] + " ");
         }
+        System.out.println("\nDizinin pozitif elemanları : ");
+        System.out.println(Arrays.toString(B));
+        System.out.println("\nDizinin negatif elemanları : ");
+        System.out.println(Arrays.toString(C));
     }
 }

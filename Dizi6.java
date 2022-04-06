@@ -25,11 +25,14 @@ public class Dizi6 {
         }
         int B[] = new int[pozitif];
         int C[] = new int[negatif];
+        int j = 0, k = 0;
         for (int i = 0; i < A.length; i++) {
             if (A[i] > 0) {
-                B[i] = A[i];
+                B[j] = A[i];
+                j++;
             } else if (A[i] < 0) {
-                C[i] = A[i];
+                C[k] = A[i];
+                k++;
             }
         }
         System.out.println("\nDizinin pozitif elemanları : ");
@@ -38,7 +41,7 @@ public class Dizi6 {
         }
         System.out.println("\nDizinin negatif elemanları : ");
         for (int i = 0; i < C.length; i++) {
-            System.out.println(C[i] + " ");
+            System.out.print(C[i] + " ");
         }
     }
 }
